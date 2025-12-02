@@ -38,10 +38,10 @@
     <file src="vendor\static-wkhtml2pdf\wkhtmltox0.dll" target="WkhtmlRuntimes" />
     
     <!-- Build-Targets zum kopieren der non-.NET Runtimes in den build-output -->
-    <file src="CopyWkHtmlToPdfRuntimesToOutdir.targets" target="build/CopyWkHtmlToPdfRuntimesToOutdir.targets" />
+    <file src="CopyWkHtmlToPdfRuntimesToOutdir.targets" target="buildTransitive/CopyWkHtmlToPdfRuntimesToOutdir.targets" />
     
     <!-- Build-Targets, welche bei der Nuget-Package Installation automatisch in die Projektdatei indiziert werden -->
-    <file src="KornSW.DocToolkit.targets" target="build/KornSW.DocToolkit.targets" />
+    <file src="KornSW.DocToolkit.targets" target="buildTransitive/KornSW.DocToolkit.targets" />
 
     <!-- .NET 4.8 -->
     <file src="dist\bin-net48\KornSW.DocToolkit.dll" target="lib/net48" />
