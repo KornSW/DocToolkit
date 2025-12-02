@@ -2,26 +2,31 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
   <!-- REQUIRED TO GET THE "AfterBuild" EVENT WORKING!!! -->
-  <PropertyGroup>
+  <!-- <PropertyGroup>
     <PostBuildEvent>
     </PostBuildEvent>
   </PropertyGroup>
 
-  <!--
   <Target Name="AfterBuild">
     <ItemGroup>
       <WkhtmlRuntimes Include="$(MSBuildThisFileDirectory)..\..\WkhtmlRuntimes\*.*" />
     </ItemGroup>
     <Copy SourceFiles="@(WkhtmlRuntimes)" DestinationFolder="$(OutputPath)" ContinueOnError="false" SkipUnchangedFiles="true" />
   </Target>
-  -->
-
-  <Target Name="CopyDocToolkitRuntimes" AfterTargets="Build" Condition="'$(OutputType)' != 'Library'">
+  
+    <Target Name="CopyDocToolkitRuntimes" AfterTargets="Build" Condition="'$(OutputType)' != 'Library'">
     <ItemGroup>
-      <WkhtmlRuntimes Include="$(MSBuildThisFileDirectory)..\..\WkhtmlRuntimes\*.*" />
+      <WkhtmlRuntimes Include="$(MSBuildThisFileDirectory)..\WkhtmlRuntimes\*.*" />
     </ItemGroup>
     <Copy SourceFiles="@(WkhtmlRuntimes)" DestinationFolder="$(OutputPath)" ContinueOnError="false" SkipUnchangedFiles="true" />
   </Target>
+  -->
 
+  <Target Name="CopyDocToolkitRuntimes" AfterTargets="Build" >
+    <ItemGroup>
+      <WkhtmlRuntimes Include="$(MSBuildThisFileDirectory)..\WkhtmlRuntimes\*.*" />
+    </ItemGroup>
+    <Copy SourceFiles="@(WkhtmlRuntimes)" DestinationFolder="$(OutputPath)" ContinueOnError="false" SkipUnchangedFiles="true" />
+  </Target>
 
 </Project>
