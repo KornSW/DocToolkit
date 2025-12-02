@@ -37,23 +37,21 @@
     <file src="vendor\static-wkhtml2pdf\wkhtmltopdf.exe" target="WkhtmlRuntimes" />
     <file src="vendor\static-wkhtml2pdf\wkhtmltox0.dll" target="WkhtmlRuntimes" />
     
+    <!-- Build-Targets zum kopieren der non-.NET Runtimes in den build-output -->
+    <file src="CopyWkHtmlToPdfRuntimesToOutdir.targets" target="build/CopyWkHtmlToPdfRuntimesToOutdir.targets" />
+    
+    <!-- Build-Targets, welche bei der Nuget-Package Installation automatisch in die Projektdatei indiziert werden -->
+    <file src="KornSW.DocToolkit.targets" target="build/KornSW.DocToolkit.targets" />
+
     <!-- .NET 4.8 -->
     <file src="dist\bin-net48\KornSW.DocToolkit.dll" target="lib/net48" />
     <file src="dist\bin-net48\KornSW.DocToolkit.xml" target="lib/net48" />
     <file src="dist\bin-net48\KornSW.DocToolkit.pdb" target="lib/net48" />
-    <!-- Build-Targets zum kopieren der non-.NET Runtimes in den build-output -->
-      <file src="src\DocToolkit.net48\CopyWkHtmlToPdfRuntimesToOutdir.targets" target="build/net48/CopyWkHtmlToPdfRuntimesToOutdir.targets" />
-    <!-- Build-Targets, welche bei der Nuget-Package Installation automatisch in die Projektdatei indiziert werden -->
-      <file src="src\DocToolkit.net48\InjectIntoProjectFile.targets" target="build/net48/HtmlDocGen.targets" />
 
     <!-- .NET 8.0 -->
     <file src="dist\bin-net8.0\KornSW.DocToolkit.dll" target="lib/net8.0" />
     <file src="dist\bin-net8.0\KornSW.DocToolkit.xml" target="lib/net8.0" />
     <file src="dist\bin-net8.0\KornSW.DocToolkit.pdb" target="lib/net8.0" />
-    <!-- Build-Targets zum kopieren der non-.NET Runtimes in den build-output -->
-      <file src="src\DocToolkit.net8.0\CopyWkHtmlToPdfRuntimesToOutdir.targets" target="build/net8.0/CopyWkHtmlToPdfRuntimesToOutdir.targets" />
-    <!-- Build-Targets, welche bei der Nuget-Package Installation automatisch in die Projektdatei indiziert werden -->
-      <file src="src\DocToolkit.net8.0\InjectIntoProjectFile.targets" target="build/net8.0/HtmlDocGen.targets" />
-    
+
   </files>
 </package>

@@ -584,39 +584,6 @@ namespace System {
       return string.Format(stringWithPlaceholders, values);
     }
 
-    /* TODO ERROR: Skipped IfDirectiveTrivia
-    #If NET461 Then
-    *//* TODO ERROR: Skipped DisabledTextTrivia
-
-        <Obsolete("use 'GetMD5HashAsHex()' instead!")>
-        <Extension(), EditorBrowsable(EditorBrowsableState.Always)>
-        Public Function MD5(value As String) As String
-          Using md5Provider As New System.Security.Cryptography.MD5CryptoServiceProvider
-
-            Dim stringBytes As Byte()
-            Dim hashBytes As Byte()
-            Dim tmp As String = ""
-            Dim sb As New StringBuilder
-
-            stringBytes = Encoding.ASCII.GetBytes(value)
-            hashBytes = md5Provider.ComputeHash(stringBytes)
-
-            For i As Integer = 0 To hashBytes.Length - 1
-              tmp = Microsoft.VisualBasic.Hex(hashBytes(i))
-              If (tmp.Length = 1) Then
-                sb.Append("0")
-              End If
-              sb.Append(tmp)
-            Next
-
-            Return sb.ToString().ToLower()
-          End Using
-
-        End Function
-
-    *//* TODO ERROR: Skipped EndIfDirectiveTrivia
-    #End If
-    */
     /// <summary>
     /// a lower case hex representation of the MD5 hash for the given string (ASCII mode)
     /// </summary>

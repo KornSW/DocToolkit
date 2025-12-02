@@ -1,0 +1,4 @@
+<Project>
+  <Import Project="$(MSBuildThisFileDirectory)CopyWkHtmlToPdfRuntimesToOutdir.targets"
+          Condition="Exists('$(MSBuildThisFileDirectory)CopyWkHtmlToPdfRuntimesToOutdir.targets')" />
+</Project>

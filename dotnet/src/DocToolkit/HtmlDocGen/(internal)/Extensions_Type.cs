@@ -171,13 +171,6 @@ internal static class ExtensionsForType {
     }
 
 
-
-    // TODO: immer runtime types nehmen!!!! weil die nie weniger, sondern immer mehr können
-    // TODO: instance=nothing geht in den "Static" Mode
-    // TODO: Funktionen unterstützen
-
-
-
     // multiples are definitly defaultprop accessors
     memberPath = memberPath.Replace(")(", ").(");
 
@@ -426,9 +419,6 @@ internal static class ExtensionsForType {
   [EditorBrowsable(EditorBrowsableState.Always)]
   public static bool IsSoftAssignableFrom(this Type extendee, Type c) {
     return extendee.IsAssignableFrom(c);
-
-    // TODO: hier eigene logik, die auch unterschidliche assmeblies erlaubt
-
   }
 
   [EditorBrowsable(EditorBrowsableState.Always)]
