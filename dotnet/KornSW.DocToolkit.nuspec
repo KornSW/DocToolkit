@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>KornSW.DocToolkit</id>
+    <version>0.0.0</version>
+    <title>KornSW.DocToolkit</title>
+    <authors>KornSW</authors>
+    <owners>(public domain)</owners>
+    <copyright>KornSW</copyright>
+    <description>KornSW.DocToolkit</description>
+    <tags>AI GPT</tags>
+    <!-- https://spdx.org/licenses/ -->
+    <license type="expression">GPL-3.0-only</license>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <icon>PackageIcon.png</icon>
+    <projectUrl>https://github.com/KornSW/DocToolkit</projectUrl>
+    <dependencies>
+      <group targetFramework="net48">
+        <dependency id="Newtonsoft.Json" version="[13.0.3,14.0)" />
+      </group>
+      <group targetFramework="net8.0">
+        <dependency id="Newtonsoft.Json" version="[13.0.3,14.0)" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <!-- https://docs.microsoft.com/en-us/nuget/create-packages/creating-a-package#from-a-convention-based-working-directory -->
+    <file src="PackageIcon.png" target="" />
+         
+    <file src="vendor\static-wkhtml2pdf\libeay32.dll" target="WkhtmlRuntimes" />
+    <file src="vendor\static-wkhtml2pdf\libgcc_s_dw2-1.dll" target="WkhtmlRuntimes" />
+    <file src="vendor\static-wkhtml2pdf\mingwm10.dll" target="WkhtmlRuntimes" />
+    <file src="vendor\static-wkhtml2pdf\msvcp120.dll" target="WkhtmlRuntimes" />
+    <file src="vendor\static-wkhtml2pdf\msvcr120.dll" target="WkhtmlRuntimes" />
+    <file src="vendor\static-wkhtml2pdf\pdftk.exe" target="WkhtmlRuntimes" />
+    <file src="vendor\static-wkhtml2pdf\ssleay32.dll" target="WkhtmlRuntimes" />
+    <file src="vendor\static-wkhtml2pdf\wkhtmltopdf.exe" target="WkhtmlRuntimes" />
+    <file src="vendor\static-wkhtml2pdf\wkhtmltox0.dll" target="WkhtmlRuntimes" />
+    
+    <!-- .NET 4.8 -->
+    <file src="dist\bin-net48\KornSW.DocToolkit.dll" target="lib/net48" />
+    <file src="dist\bin-net48\KornSW.DocToolkit.xml" target="lib/net48" />
+    <file src="dist\bin-net48\KornSW.DocToolkit.pdb" target="lib/net48" />
+    <!-- Build-Targets zum kopieren der non-.NET Runtimes in den build-output -->
+      <file src="src\DocToolkit.net48\CopyWkHtmlToPdfRuntimesToOutdir.targets" target="build/net48/CopyWkHtmlToPdfRuntimesToOutdir.targets" />
+    <!-- Build-Targets, welche bei der Nuget-Package Installation automatisch in die Projektdatei indiziert werden -->
+      <file src="src\DocToolkit.net48\InjectIntoProjectFile.targets" target="build/net48/HtmlDocGen.targets" />
+
+    <!-- .NET 8.0 -->
+    <file src="dist\bin-net8.0\KornSW.DocToolkit.dll" target="lib/net8.0" />
+    <file src="dist\bin-net8.0\KornSW.DocToolkit.xml" target="lib/net8.0" />
+    <file src="dist\bin-net8.0\KornSW.DocToolkit.pdb" target="lib/net8.0" />
+    <!-- Build-Targets zum kopieren der non-.NET Runtimes in den build-output -->
+      <file src="src\DocToolkit.net8.0\CopyWkHtmlToPdfRuntimesToOutdir.targets" target="build/net8.0/CopyWkHtmlToPdfRuntimesToOutdir.targets" />
+    <!-- Build-Targets, welche bei der Nuget-Package Installation automatisch in die Projektdatei indiziert werden -->
+      <file src="src\DocToolkit.net8.0\InjectIntoProjectFile.targets" target="build/net8.0/HtmlDocGen.targets" />
+    
+  </files>
+</package>

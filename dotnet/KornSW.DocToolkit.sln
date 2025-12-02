@@ -1,0 +1,78 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33627.172
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4130D21C-FE8F-4925-93E7-217B4AF1B7D9}"
+	ProjectSection(SolutionItems) = preProject
+		..\doc\changelog.md = ..\doc\changelog.md
+		KornSW.DocToolkit.nuspec = KornSW.DocToolkit.nuspec
+		..\readme.md = ..\readme.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{EFB5135D-039A-4D92-8FDD-9EA5D070F991}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{C5272353-539E-4138-93FD-9DF437F6DA47}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "targets", "targets", "{911E9786-3347-476A-89D8-6AB7EA3D6320}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocToolkit.Tests", "test\DocToolkit.Tests\DocToolkit.Tests.csproj", "{4F78E701-0C03-4235-B02D-BC37277367F6}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "DocToolkit", "src\DocToolkit\DocToolkit.shproj", "{CF0A161A-99BA-4F01-AF5E-16C6FCBC85AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocToolkit.net8.0", "src\DocToolkit.net8.0\DocToolkit.net8.0.csproj", "{C94AB7C5-7B62-44ED-B3E6-BB8DA8A171E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocToolkit.net48", "src\DocToolkit.net48\DocToolkit.net48.csproj", "{882AA78A-5D13-4EF6-B1D9-FE4FCFA8415E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "wkhtml2pdf", "wkhtml2pdf", "{CF130F77-6865-4548-92CE-319DFC2EB9FB}"
+	ProjectSection(SolutionItems) = preProject
+		vendor\static-wkhtml2pdf\libeay32.dll = vendor\static-wkhtml2pdf\libeay32.dll
+		vendor\static-wkhtml2pdf\libgcc_s_dw2-1.dll = vendor\static-wkhtml2pdf\libgcc_s_dw2-1.dll
+		vendor\static-wkhtml2pdf\mingwm10.dll = vendor\static-wkhtml2pdf\mingwm10.dll
+		vendor\static-wkhtml2pdf\msvcp120.dll = vendor\static-wkhtml2pdf\msvcp120.dll
+		vendor\static-wkhtml2pdf\msvcr120.dll = vendor\static-wkhtml2pdf\msvcr120.dll
+		vendor\static-wkhtml2pdf\pdftk.exe = vendor\static-wkhtml2pdf\pdftk.exe
+		vendor\static-wkhtml2pdf\ssleay32.dll = vendor\static-wkhtml2pdf\ssleay32.dll
+		vendor\static-wkhtml2pdf\wkhtmltopdf.exe = vendor\static-wkhtml2pdf\wkhtmltopdf.exe
+		vendor\static-wkhtml2pdf\wkhtmltox0.dll = vendor\static-wkhtml2pdf\wkhtmltox0.dll
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4F78E701-0C03-4235-B02D-BC37277367F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F78E701-0C03-4235-B02D-BC37277367F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F78E701-0C03-4235-B02D-BC37277367F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F78E701-0C03-4235-B02D-BC37277367F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C94AB7C5-7B62-44ED-B3E6-BB8DA8A171E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C94AB7C5-7B62-44ED-B3E6-BB8DA8A171E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C94AB7C5-7B62-44ED-B3E6-BB8DA8A171E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C94AB7C5-7B62-44ED-B3E6-BB8DA8A171E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{882AA78A-5D13-4EF6-B1D9-FE4FCFA8415E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{882AA78A-5D13-4EF6-B1D9-FE4FCFA8415E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{882AA78A-5D13-4EF6-B1D9-FE4FCFA8415E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{882AA78A-5D13-4EF6-B1D9-FE4FCFA8415E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{911E9786-3347-476A-89D8-6AB7EA3D6320} = {EFB5135D-039A-4D92-8FDD-9EA5D070F991}
+		{4F78E701-0C03-4235-B02D-BC37277367F6} = {C5272353-539E-4138-93FD-9DF437F6DA47}
+		{CF0A161A-99BA-4F01-AF5E-16C6FCBC85AE} = {EFB5135D-039A-4D92-8FDD-9EA5D070F991}
+		{C94AB7C5-7B62-44ED-B3E6-BB8DA8A171E7} = {911E9786-3347-476A-89D8-6AB7EA3D6320}
+		{882AA78A-5D13-4EF6-B1D9-FE4FCFA8415E} = {911E9786-3347-476A-89D8-6AB7EA3D6320}
+		{CF130F77-6865-4548-92CE-319DFC2EB9FB} = {4130D21C-FE8F-4925-93E7-217B4AF1B7D9}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D2F37C1D-32F0-4BF2-AAEB-46B9D8C07D23}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		src\DocToolkit\DocToolkit.projitems*{882aa78a-5d13-4ef6-b1d9-fe4fcfa8415e}*SharedItemsImports = 4
+		src\DocToolkit\DocToolkit.projitems*{c94ab7c5-7b62-44ed-b3e6-bb8da8a171e7}*SharedItemsImports = 5
+		src\DocToolkit\DocToolkit.projitems*{cf0a161a-99ba-4f01-af5e-16c6fcbc85ae}*SharedItemsImports = 13
+	EndGlobalSection
+EndGlobal

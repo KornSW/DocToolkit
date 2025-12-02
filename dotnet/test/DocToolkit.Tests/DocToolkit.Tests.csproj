@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>KornSW</RootNamespace>
+    <Nullable>disable</Nullable>    
+    <IsPackable>false</IsPackable>   
+    <IsTestProject>true</IsTestProject>  
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MSTest" Version="3.0.4" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\DocToolkit.net8.0\DocToolkit.net8.0.csproj" />
+  </ItemGroup>
+
+</Project>

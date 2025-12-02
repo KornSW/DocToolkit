@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>cf0a161a-99ba-4f01-af5e-16c6fcbc85ae</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>KornSW</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)BookCreation\BookMerger.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)HtmlDocGen\%28internal%29\EmbeddedFiles.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)HtmlDocGen\%28internal%29\Extensions_Assembly.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)HtmlDocGen\%28internal%29\Extensions_Byte.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)HtmlDocGen\%28internal%29\Extensions_Image.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)HtmlDocGen\%28internal%29\Extensions_String.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)HtmlDocGen\%28internal%29\Extensions_StringBuilder.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)HtmlDocGen\%28internal%29\Extensions_TextReader.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)HtmlDocGen\%28internal%29\Extensions_Type.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)HtmlDocGen\Dom %28Nodes%29\DocumentBlock %28Abstract%29.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)HtmlDocGen\Dom %28Nodes%29\EmbeddedImage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)HtmlDocGen\Dom %28Nodes%29\MultipleDocumentBlocks.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)HtmlDocGen\Dom %28Nodes%29\TemplateBlock.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)HtmlDocGen\GeneratorV2\Class1.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)HtmlDocGen\Generator\DocumentGenerator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)HtmlDocGen\Generator\HTML\HtmlDocumentFormatProvider.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)HtmlDocGen\Generator\HTML\HtmlDocumentGenerator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)HtmlDocGen\Generator\IDocumentFormatProvider.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)HtmlDocGen\Helper Classes\Content.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)HtmlDocGen\Helper Classes\DocumentDataSource.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)[Helpers].cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PdfHandling\PdfTools.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)NewsPaperLayouting\StockNewsHtmlRenderer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)BookCreation\" />
+    <Folder Include="$(MSBuildThisFileDirectory)PdfHandling\" />
+    <Folder Include="$(MSBuildThisFileDirectory)NewsPaperLayouting\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)HtmlDocGen\GeneratorV2\TODO.txt" />
+  </ItemGroup>
+</Project>
