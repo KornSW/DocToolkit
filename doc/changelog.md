@@ -7,5 +7,13 @@ This files contains a version history including all changes relevant for semanti
 
 ## Upcoming Changes
 
-* initial commit (moved from Repo 'HtmlDocGen' and migratet to c# on .net 8)
+*(none)*
+
+
+
+## v 0.1.0
+released **2025-12-02**, including:
+ - initial commit (moved from Repo 'HtmlDocGen' and migratet to c# on .net 8)
+
+
 

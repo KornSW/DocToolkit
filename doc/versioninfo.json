@@ -1,0 +1,13 @@
+{
+  "currentVersion": "0.1.0",
+  "currentVersionWithSuffix": "0.1.0",
+  "releaseType": "",
+  "previousVersion": "0.0.0",
+  "changeGrade": "fix",
+  "currentMajor": 0,
+  "currentMinor": 1,
+  "currentPatch": 0,
+  "versionDateInfo": "2025-12-02",
+  "versionTimeInfo": "06:57:23",
+  "versionNotes": "- initial commit (moved from Repo 'HtmlDocGen' and migratet to c# on .net 8)\n"
+}
