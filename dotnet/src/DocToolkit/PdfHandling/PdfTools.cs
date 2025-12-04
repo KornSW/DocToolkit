@@ -44,7 +44,7 @@ namespace KornSW.DocToolkit.PdfHandling {
     /// </summary>
     private static string WkhtmlToPdfExecutablePath {
       get {
-        return Path.Combine(_BinariesDir, "(Runtimes)", "wkhtmltopdf.exe");
+        return Path.Combine(_BinariesDir, "wkhtmltopdf.exe");
       }
     }
 
