@@ -7,7 +7,13 @@ This files contains a version history including all changes relevant for semanti
 
 ## Upcoming Changes
 
-* fix executable path
+*(none)*
+
+
+
+## v 0.1.5
+released **2025-12-04**, including:
+ - fix executable path
 
 
 
